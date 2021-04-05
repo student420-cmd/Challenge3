@@ -5,19 +5,22 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
 	<script src="scripts/main.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+	<link href="styles/styles.css" type="text/css" rel="stylesheet"/>
 <title>1906085 Challenge 3</title>
 </head>
 
 <body onload="loadMap()">
-	<div id="map" style="width: 400px; height: 300px;"></div>
+	<div class="responsiveGrid">
+		<img src="images/SpaceX-Logo.svg" alt="logoSpaceX"  class="logo"/>
+	<div id="map" class="map"></div>
 	<button onClick="randomLocation()">Press</button>
-<!--<script>
-  mapboxgl.accessToken = "pk.eyJ1IjoidGJydWluZXMiLCJhIjoiY2ttdnJjc292MDdwdTJvbnZmYzdoa3k3ciJ9._FSh2YWNzzhLed0y5bi3Zw";
-  var map = new mapboxgl.Map({
-    container: "map",
-    style: "mapbox://styles/mapbox/streets-v11"
-  });
-</script>-->
-
+<div class="weather">
+	<h2 class="city">Het weer in Den Haag</h2>
+	<div class="temp">16ºC</div>
+	<img src="#" alt="" class="icon"/>
+	<div class="description">Bewolkt</div>
+	</div>
+	<h2 class="longlat">4.324490 52.067115</h2>
+	</div>
 </body>
 </html>
