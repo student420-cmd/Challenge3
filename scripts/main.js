@@ -1,9 +1,10 @@
+
 // JavaScript Document
 var lng = 4.324490;
 var lat = 52.067115;
 var map = document.getElementById('map') ;
 fetchWeather(lat,lng);
-var location = 0;
+
 
 function randomLocation(){
 	lng = Math.random() * (89 - -89) -89;
@@ -44,7 +45,7 @@ function loadMap(){
 .addTo(map)
 }
 function fetchWeather (lat, lng){
-	fetch('https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lng+'&units=metric&lang=nl&appid=').then((response) => response.json()).then((data) => this.displayWeather(data));
+	fetch('https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lng+'&units=metric&lang=nl&appid=4f5eee36dffd8b834b717b6ebc5b74ea').then((response) => response.json()).then((data) => this.displayWeather(data));
 }
 function displayWeather (data){
 	const { name } = data;
