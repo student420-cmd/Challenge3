@@ -10,7 +10,7 @@ fetchWeather(lat,lng, level);
 function randomLocation(){
 	lng = Math.random() * (89 - -89) -89;
 	lat = Math.random() * (89 - -89) -89;
-	level = 4;
+	level = 3;
 	loadMap();
 	fetchWeather(lat,lng, level);
 	
