@@ -36,7 +36,6 @@
 body{
 	margin:0;
 	background-image: url("../images/ivana-cajina-asuyh-_ZX54-unsplash.jpg");
-	background-size: cover;
 }
 
 .map {
@@ -64,10 +63,7 @@ body{
 	margin:0 60px 0 60px;
 }
 .logo {
-	display:flex;
-	width:50%;
-	padding-left:30%;
-	padding-top:5%;
+
 }
 .description{
 	text-transform:capitalize;
