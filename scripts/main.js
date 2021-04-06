@@ -6,7 +6,7 @@ var map = document.getElementById('map') ;
 var level = 15;
 fetchWeather(lat,lng, level);
 
-
+// Functie voor willekeurig teleporteren over de hele wereld.
 function randomLocation(){
 	lng = Math.random() * (89 - -89) -89;
 	lat = Math.random() * (89 - -89) -89;
@@ -15,6 +15,7 @@ function randomLocation(){
 	fetchWeather(lat,lng, level);
 	
 }
+// Elke location kan een nummer hebben die staat voor een plaats. 
 function teleportLocation(location){
 	if (location == 1){
 		lng = 4.324490;
